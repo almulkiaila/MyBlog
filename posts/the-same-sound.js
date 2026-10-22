@@ -16,9 +16,9 @@ window.PAGE_I18N = {
     back: "← Todos los escritos",
     body:
       "<p>No suelo publicar nada personal, pero ayer pasó algo que creo que merece la pena compartir, porque es algo de lo que muy poca gente habla.</p>" +
-      "<p>Estábamos en la biblioteca de la universidad cuando oímos un avión volando muy bajo. Era un ruido fuerte, de esos que hacen que todo el mundo levante la vista. Mis amigos fueron directos a la ventana, con curiosidad por ver qué era. Yo cerré los ojos, bajé la cabeza y no pude moverme. Sin elegirlo, volví a Siria, esperando la explosión que solía venir después de ese sonido. Duró solo unos segundos. Cinco minutos después el sonido volvió, y con él exactamente la misma reacción. Más tarde nos enteramos de que estaban probando nuevos aviones militares.</p>" +
-      "<p>Lo que se me quedó no fue el miedo en sí, sino la diferencia. Era el mismo sonido en la misma sala. Para algunos significaba curiosidad; para otros, peligro. Nadie estaba reaccionando «mal». Cada uno reaccionaba a lo que había vivido antes.</p>" +
-      "<p>Y es que casi nunca sabemos lo que otra persona lleva consigo. Una reacción que desde fuera parece exagerada o extraña, muchas veces tiene todo el sentido desde dentro.</p>" +
+      "<p>Estábamos en la biblioteca de la universidad cuando oímos un avión volando muy bajo. Era un ruido fuerte, de esos que hacen que todo el mundo levante la vista. Mis amigos fueron directos a la ventana, con curiosidad por ver qué era. Yo cerré los ojos, bajé la cabeza y no pude moverme. Sin quererlo, volví a Siria, esperando la explosión que solía venir después de ese sonido. Duró solo unos segundos. Cinco minutos después el sonido volvió, y con él exactamente la misma reacción. Más tarde nos enteramos de que estaban probando nuevos aviones militares.</p>" +
+      "<p>Lo que me quedó grabado no fue el miedo en sí, sino la diferencia. Era el mismo sonido en la misma sala. Para algunos significaba curiosidad; para otros, peligro. Nadie estaba reaccionando «mal». Cada uno reaccionaba a lo que había vivido antes.</p>" +
+      "<p>Y es que casi nunca sabemos lo que otra persona lleva consigo. Una reacción que desde fuera parece exagerada o extraña muchas veces tiene todo el sentido desde dentro.</p>" +
       "<p>Así que, antes de juzgar cómo reacciona alguien ante algo, recuerda que solo ves el momento, no todo lo que vino antes.</p>"
   },
 

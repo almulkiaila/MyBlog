@@ -31,8 +31,8 @@ window.I18N = {
     greeting: "Hola, soy <em>Aila Al Mulki</em>.",
     aboutTitle: "Sobre mí",
     writingTitle: "Escritos",
-    p1: "Actualmente trabajo en investigación y desarrollo en VirusTotal, de Google, donde me centro en malware e inteligencia artificial. Al mismo tiempo, estoy haciendo el Máster en Ingeniería del Software e Inteligencia Artificial en la Universidad de Málaga.",
-    p2: "La curiosidad siempre me ha acompañado: por hacer y descubrir cosas nuevas, tanto en lo técnico como en lo social. Probablemente eso explica mi obsesión por viajar y por la tecnología: lugares nuevos, gente nueva, problemas nuevos que resolver.",
+    p1: "Actualmente me dedico a la investigación y el desarrollo en VirusTotal, de Google, donde me centro en malware e inteligencia artificial. Al mismo tiempo, estoy cursando el Máster en Ingeniería del Software e Inteligencia Artificial en la Universidad de Málaga.",
+    p2: "Siempre he sentido curiosidad por hacer y descubrir cosas nuevas, tanto en lo técnico como en lo social. Probablemente eso explica mi obsesión por viajar y por la tecnología: lugares nuevos, gente nueva, problemas nuevos que resolver.",
     p3: "Nací y crecí en Hama, en Siria, y hasta ahora he vivido en tres continentes distintos. Por el camino, aprender se convirtió en una pasión en sí misma; quizá por eso hablo cuatro idiomas y siempre estoy buscando qué aprender después."
   },
 
