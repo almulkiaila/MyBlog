@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aila Al Mulki</title>
+  <meta name="description" content="Personal blog of Aila Al Mulki — researcher and developer at VirusTotal, working on malware and AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="monogram" href="./" aria-label="Aila Al Mulki — home">A<span>·</span>M</a>
+
+    <nav class="lang-switch" aria-label="Language">
+      <button type="button" data-lang="en" lang="en">EN</button>
+      <button type="button" data-lang="es" lang="es">ES</button>
+      <button type="button" data-lang="fr" lang="fr">FR</button>
+      <button type="button" data-lang="ar" lang="ar" class="ar">عربي</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow" data-i18n="eyebrow">Malware · AI · Curiosity</p>
+      <h1 data-i18n="greeting">Hi, I'm <em>Aila Al Mulki</em>.</h1>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 id="about-title"><span class="rule" aria-hidden="true"></span><span data-i18n="aboutTitle">About me</span></h2>
+
+      <div class="prose">
+        <p data-i18n="p1"></p>
+        <p data-i18n="p2"></p>
+        <p data-i18n="p3"></p>
+      </div>
+
+      <dl class="facts">
+        <div>
+          <dt data-i18n="factWorkLabel">Currently</dt>
+          <dd data-i18n="factWork">VirusTotal · Google</dd>
+        </div>
+        <div>
+          <dt data-i18n="factStudyLabel">Studying</dt>
+          <dd data-i18n="factStudy">MSc Software Engineering · University of Málaga</dd>
+        </div>
+        <div>
+          <dt data-i18n="factLangLabel">Languages</dt>
+          <dd data-i18n="factLang">4</dd>
+        </div>
+        <div>
+          <dt data-i18n="factContLabel">Continents lived on</dt>
+          <dd data-i18n="factCont">3 — for now</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="flower" aria-hidden="true">✿</span>
+    <p dir="ltr">© <span id="year"></span> Aila Al Mulki</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+:root {
+  --bg: #f4ede3;          /* warm beige */
+  --bg-soft: #ece2d4;
+  --ink: #3b322c;         /* soft espresso, not black */
+  --ink-muted: #7d6f64;
+  --pink: #d49aa3;        /* dusty rose */
+  --pink-deep: #b86f7c;
+  --line: #dccfbf;
+
+  --serif: "Cormorant Garamond", "Cormorant", Garamond, Georgia, serif;
+  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --arabic: "Amiri", "Noto Naskh Arabic", "Geeza Pro", serif;
+
+  --measure: 36rem;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--pink); color: #fff; }
+
+a { color: inherit; }
+
+/* ---------- Header ---------- */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 0;
+}
+
+.monogram {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+.monogram span { color: var(--pink); margin: 0 0.1em; }
+
+.lang-switch {
+  display: flex;
+  gap: 0.25rem;
+  font-family: var(--sans);
+}
+
+.lang-switch button {
+  appearance: none;
+  border: 1px solid transparent;
+  background: none;
+  color: var(--ink-muted);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+.lang-switch button.ar {
+  font-family: var(--arabic);
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  padding-block: 0.15rem;
+}
+.lang-switch button:hover { color: var(--pink-deep); }
+.lang-switch button[aria-pressed="true"] {
+  color: var(--pink-deep);
+  border-color: var(--pink);
+  background: rgba(212, 154, 163, 0.1);
+}
+.lang-switch button:focus-visible,
+.monogram:focus-visible {
+  outline: 1px solid var(--pink-deep);
+  outline-offset: 3px;
+}
+
+/* ---------- Main ---------- */
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.hero { padding: clamp(4rem, 14vh, 8rem) 0 3.5rem; }
+
+.eyebrow {
+  margin: 0 0 1.25rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--pink-deep);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 8vw, 3.9rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--pink-deep);
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0 0 1.75rem;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+h2 .rule {
+  display: inline-block;
+  width: 2.25rem;
+  height: 1px;
+  background: var(--pink);
+}
+
+.prose p { margin: 0 0 1.4em; font-weight: 400; }
+.prose p:first-child::first-letter {
+  float: left;
+  font-size: 3.4em;
+  line-height: 0.85;
+  padding: 0.08em 0.1em 0 0;
+  color: var(--pink-deep);
+  font-weight: 300;
+}
+
+/* ---------- Facts ---------- */
+
+.facts {
+  margin: 3rem 0 0;
+  padding: 1.75rem 0 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 2rem;
+}
+.facts div { min-width: 0; }
+.facts dt {
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--pink-deep);
+  margin-bottom: 0.25rem;
+}
+.facts dd {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  margin-top: 5rem;
+  padding: 2rem 1.5rem 2.5rem;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  color: var(--ink-muted);
+}
+.site-footer p { margin: 0.4rem 0 0; }
+.flower { color: var(--pink); font-size: 1rem; }
+
+/* ---------- Arabic (RTL) ---------- */
+
+html[lang="ar"] body { font-family: var(--arabic); font-size: 1.2rem; line-height: 1.95; }
+html[lang="ar"] h1 { font-family: var(--arabic); font-weight: 400; line-height: 1.4; letter-spacing: 0; }
+html[lang="ar"] h1 em { font-style: normal; }
+html[lang="ar"] h2,
+html[lang="ar"] .eyebrow,
+html[lang="ar"] .facts dt {
+  font-family: var(--arabic);
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 0.95rem;
+}
+html[lang="ar"] .prose p:first-child::first-letter {
+  float: none; font-size: inherit; padding: 0; color: inherit; line-height: inherit;
+}
+html[lang="ar"] .facts dd { font-size: 1.05rem; }
+
+/* ---------- Gentle fade when switching language ---------- */
+
+main { transition: opacity 0.25s ease; }
+main.is-switching { opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  main, .lang-switch button { transition: none; }
+}
+
+@media (max-width: 30rem) {
+  body { font-size: 1.15rem; }
+  .site-header { padding-top: 1.5rem; padding-inline: 1rem; }
+  main { padding: 0 1rem; }
+  .lang-switch button { padding: 0.3rem 0.45rem; }
+  .facts { grid-template-columns: 1fr; }
+}
