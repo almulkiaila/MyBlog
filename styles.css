@@ -163,32 +163,6 @@ h2 .rule {
   font-weight: 300;
 }
 
-/* ---------- Facts ---------- */
-
-.facts {
-  margin: 3rem 0 0;
-  padding: 1.75rem 0 0;
-  border-top: 1px solid var(--line);
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem 2rem;
-}
-.facts div { min-width: 0; }
-.facts dt {
-  font-family: var(--sans);
-  font-size: 0.66rem;
-  font-weight: 400;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--pink-deep);
-  margin-bottom: 0.25rem;
-}
-.facts dd {
-  margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.4;
-}
-
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -210,8 +184,7 @@ html[lang="ar"] body { font-family: var(--arabic); font-size: 1.2rem; line-heigh
 html[lang="ar"] h1 { font-family: var(--arabic); font-weight: 400; line-height: 1.4; letter-spacing: 0; }
 html[lang="ar"] h1 em { font-style: normal; }
 html[lang="ar"] h2,
-html[lang="ar"] .eyebrow,
-html[lang="ar"] .facts dt {
+html[lang="ar"] .eyebrow {
   font-family: var(--arabic);
   letter-spacing: 0;
   text-transform: none;
@@ -220,7 +193,6 @@ html[lang="ar"] .facts dt {
 html[lang="ar"] .prose p:first-child::first-letter {
   float: none; font-size: inherit; padding: 0; color: inherit; line-height: inherit;
 }
-html[lang="ar"] .facts dd { font-size: 1.05rem; }
 
 /* ---------- Gentle fade when switching language ---------- */
 
@@ -236,5 +208,4 @@ main.is-switching { opacity: 0; }
   .site-header { padding-top: 1.5rem; padding-inline: 1rem; }
   main { padding: 0 1rem; }
   .lang-switch button { padding: 0.3rem 0.45rem; }
-  .facts { grid-template-columns: 1fr; }
 }
