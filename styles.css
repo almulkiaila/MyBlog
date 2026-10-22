@@ -153,6 +153,64 @@ h2 .rule {
   font-weight: 300;
 }
 
+/* ---------- Writing list ---------- */
+
+.writing { margin-top: 4.5rem; }
+
+.post-list { list-style: none; margin: 0; padding: 0; }
+.post-list li + li { border-top: 1px solid var(--line); }
+.post-list a {
+  display: block;
+  padding: 1.25rem 0;
+  text-decoration: none;
+}
+.post-list time,
+.post-header time {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.post-title {
+  display: block;
+  margin: 0.2rem 0 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.25;
+  transition: color 0.2s;
+}
+.post-list a:hover .post-title { color: var(--pink-deep); }
+.post-excerpt { display: block; color: var(--ink-muted); font-size: 1.1rem; line-height: 1.55; }
+
+/* ---------- Single post ---------- */
+
+.post { padding-top: clamp(3rem, 10vh, 6rem); }
+
+.back {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+.back:hover { color: var(--pink-deep); }
+
+.post-header { margin: 3rem 0 2.5rem; }
+.post-header h1 { margin-top: 0.6rem; }
+
+.waveform {
+  display: block;
+  width: 7.5rem;
+  height: auto;
+  margin-bottom: 1.75rem;
+  stroke: var(--pink);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -182,6 +240,16 @@ html[lang="ar"] h2 {
 html[lang="ar"] .prose p:first-child::first-letter {
   float: none; font-size: inherit; padding: 0; color: inherit; line-height: inherit;
 }
+
+html[lang="ar"] .post-list time,
+html[lang="ar"] .post-header time,
+html[lang="ar"] .back {
+  font-family: var(--arabic);
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 0.95rem;
+}
+html[lang="ar"] .post-title { font-family: var(--arabic); font-size: 1.45rem; line-height: 1.6; }
 
 /* ---------- Gentle fade when switching language ---------- */
 

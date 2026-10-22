@@ -1,6 +1,7 @@
 (function () {
   var STORAGE_KEY = "aila-blog-lang";
   var SUPPORTED = Object.keys(window.I18N);
+  var PAGE = window.PAGE_I18N || {};
   var root = document.documentElement;
   var main = document.querySelector("main");
   var buttons = document.querySelectorAll(".lang-switch button");
@@ -22,7 +23,7 @@
   }
 
   function render(lang) {
-    var t = window.I18N[lang];
+    var t = Object.assign({}, window.I18N[lang], PAGE[lang]);
     root.lang = lang;
     root.dir = t.dir;
     document.title = t.title;
