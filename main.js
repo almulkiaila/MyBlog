@@ -2,6 +2,8 @@
   var STORAGE_KEY = "aila-blog-lang";
   var SUPPORTED = Object.keys(window.I18N);
   var PAGE = window.PAGE_I18N || {};
+  var POSTS = window.POSTS || [];
+  var body = document.body;
   var root = document.documentElement;
   var main = document.querySelector("main");
   var buttons = document.querySelectorAll(".lang-switch button");
@@ -24,9 +26,27 @@
 
   function render(lang) {
     var t = Object.assign({}, window.I18N[lang], PAGE[lang]);
+    var current = POSTS.filter(function (p) { return p.slug === body.dataset.post; })[0];
+    if (current) {
+      t.postDate = current[lang].date;
+      t.postTitle = current[lang].title;
+    }
     root.lang = lang;
     root.dir = t.dir;
-    document.title = t.title;
+    document.title = t[body.dataset.titleKey] || t.title;
+
+    document.querySelectorAll("[data-posts]").forEach(function (list) {
+      var limit = list.dataset.posts === "all" ? POSTS.length : Number(list.dataset.posts);
+      list.innerHTML = POSTS.slice(0, limit).map(function (p) {
+        var x = p[lang];
+        return '<li><a href="posts/' + p.slug + '.html">' +
+          '<time datetime="' + p.date + '">' + x.date + '</time>' +
+          '<span class="post-title">' + x.title + '</span>' +
+          '<span class="post-excerpt">' + x.excerpt + '</span>' +
+          '<span class="read-more">' + t.readMore + '</span>' +
+          '</a></li>';
+      }).join("");
+    });
 
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");

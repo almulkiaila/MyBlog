@@ -14,6 +14,11 @@
   <header class="site-header">
     <a class="monogram" href="./" aria-label="Aila Al Mulki — home">A<span>·</span>M</a>
 
+    <nav class="site-nav" aria-label="Main">
+      <a href="writing.html" data-i18n="navWriting">Writing</a>
+      <a href="about.html" data-i18n="navAbout">About me</a>
+    </nav>
+
     <nav class="lang-switch" aria-label="Language">
       <button type="button" data-lang="en" lang="en">EN</button>
       <button type="button" data-lang="es" lang="es">ES</button>
@@ -26,28 +31,10 @@
       <h1 data-i18n="greeting">Hi, I'm <em>Aila Al Mulki</em>.</h1>
     </section>
 
-    <section class="about" id="about" aria-labelledby="about-title">
-      <h2 id="about-title"><span class="rule" aria-hidden="true"></span><span data-i18n="aboutTitle">About me</span></h2>
-
-      <div class="prose">
-        <p data-i18n="p1"></p>
-        <p data-i18n="p2"></p>
-        <p data-i18n="p3"></p>
-      </div>
-    </section>
-
-    <section class="writing" id="writing" aria-labelledby="writing-title">
-      <h2 id="writing-title"><span class="rule" aria-hidden="true"></span><span data-i18n="writingTitle">Writing</span></h2>
-
-      <ul class="post-list">
-        <li>
-          <a href="posts/the-same-sound.html">
-            <time datetime="2026-10-22" data-i18n="post1Date">October 22, 2026</time>
-            <span class="post-title" data-i18n="post1Title">The Same Sound</span>
-            <span class="post-excerpt" data-i18n="post1Excerpt"></span>
-          </a>
-        </li>
-      </ul>
+    <section class="writing" aria-labelledby="latest-title">
+      <h2 id="latest-title"><span class="rule" aria-hidden="true"></span><span data-i18n="latestTitle">Latest writing</span></h2>
+      <ul class="post-list" data-posts="2"></ul>
+      <a class="more-link" href="writing.html" data-i18n="allWriting">All writing →</a>
     </section>
   </main>
 
@@ -57,6 +44,7 @@
   </footer>
 
   <script src="i18n.js"></script>
+  <script src="posts.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

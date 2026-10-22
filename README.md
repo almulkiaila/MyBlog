@@ -12,4 +12,4 @@ Open `index.html` in a browser to preview.
 ## Posts
 
 Each post lives in `posts/`: an HTML page plus a `.js` file with its text per language.
-Add it to the "Writing" list in `index.html` and its date/title/excerpt to `i18n.js`.
+Then add its date, title and excerpt at the top of `posts.js`. The homepage shows the latest two; `writing.html` lists them all.
