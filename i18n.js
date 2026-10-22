@@ -3,7 +3,6 @@ window.I18N = {
   en: {
     dir: "ltr",
     title: "Aila Al Mulki",
-    eyebrow: "Malware · AI · Curiosity",
     greeting: "Hi, I'm <em>Aila Al Mulki</em>.",
     aboutTitle: "About me",
     p1: "I'm currently a researcher and developer at Google's VirusTotal, where I focus on malware and AI. Alongside that, I'm doing my Master's degree in Software Engineering and Artificial Intelligence at the University of Málaga.",
@@ -14,7 +13,6 @@ window.I18N = {
   es: {
     dir: "ltr",
     title: "Aila Al Mulki",
-    eyebrow: "Malware · IA · Curiosidad",
     greeting: "Hola, soy <em>Aila Al Mulki</em>.",
     aboutTitle: "Sobre mí",
     p1: "Actualmente trabajo en investigación y desarrollo en VirusTotal, de Google, donde me centro en malware e inteligencia artificial. Al mismo tiempo, estoy haciendo el Máster en Ingeniería del Software e Inteligencia Artificial en la Universidad de Málaga.",
@@ -25,7 +23,6 @@ window.I18N = {
   fr: {
     dir: "ltr",
     title: "Aila Al Mulki",
-    eyebrow: "Malware · IA · Curiosité",
     greeting: "Bonjour, je suis <em>Aila Al Mulki</em>.",
     aboutTitle: "À propos de moi",
     p1: "Je travaille actuellement en recherche et développement chez VirusTotal, chez Google, où je me concentre sur les malwares et l'intelligence artificielle. En parallèle, je prépare un master en génie logiciel et intelligence artificielle à l'Université de Malaga.",
@@ -37,7 +34,6 @@ window.I18N = {
   ar: {
     dir: "rtl",
     title: "أيلا الملقي",
-    eyebrow: "برمجيات خبيثة · ذكاء اصطناعي · فضول",
     greeting: "أهلين، أنا <em>أيلا الملقي</em>.",
     aboutTitle: "عنّي",
     p1: "حالياً عم اشتغل بالبحث والتطوير بـ VirusTotal تبع Google، وتركيزي على البرمجيات الخبيثة والذكاء الاصطناعي. وبنفس الوقت عم ادرس ماستر بهندسة البرمجيات والذكاء الاصطناعي بجامعة مالقة.",
