@@ -20,15 +20,6 @@ window.I18N = {
     p3: "Nací y crecí en Hama, en Siria, y hasta ahora he vivido en tres continentes distintos. Por el camino, aprender se convirtió en una pasión en sí misma; quizá por eso hablo cuatro idiomas y siempre estoy buscando qué aprender después."
   },
 
-  fr: {
-    dir: "ltr",
-    title: "Aila Al Mulki",
-    greeting: "Bonjour, je suis <em>Aila Al Mulki</em>.",
-    aboutTitle: "À propos de moi",
-    p1: "Je travaille actuellement en recherche et développement chez VirusTotal, chez Google, où je me concentre sur les malwares et l'intelligence artificielle. En parallèle, je prépare un master en génie logiciel et intelligence artificielle à l'Université de Malaga.",
-    p2: "J'ai toujours eu ce besoin de faire et de découvrir de nouvelles choses, sur le plan technique comme sur le plan humain. C'est sans doute cette curiosité qui explique mon obsession pour les voyages et la technologie : de nouveaux lieux, de nouvelles personnes, de nouveaux problèmes à résoudre.",
-    p3: "Je suis originaire de Hama, en Syrie, où j'ai grandi, et j'ai vécu jusqu'ici sur trois continents différents. En chemin, apprendre est devenu une vraie passion ; c'est peut-être pour ça que je parle quatre langues et que je cherche toujours la prochaine chose à apprendre."
-  },
 
   // Syrian (Levantine) colloquial Arabic
   ar: {
