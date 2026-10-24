@@ -226,7 +226,8 @@ h2 .rule {
 
 /* ---------- Languages card on the homepage ---------- */
 
-.languages-feature { margin-top: 4rem; }
+.languages-feature { margin-top: 1rem; }
+.languages-feature + .writing { margin-top: 4rem; }
 
 .post-cards li + li { border-top: none; margin-top: 1rem; }
 .post-cards a {
