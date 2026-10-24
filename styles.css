@@ -53,33 +53,13 @@ a { color: inherit; }
 }
 
 .monogram {
-  display: inline-grid;
-  place-items: center;
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.08em;
-  line-height: 1;
   text-decoration: none;
 }
-/* Arabic name written softly behind the A·M monogram; both share one grid cell */
-.mono-ar,
-.mono-latin { grid-area: 1 / 1; }
-.mono-ar {
-  font-family: var(--arabic);
-  font-size: 1.7rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  white-space: nowrap;
-  color: var(--pink);
-  opacity: 0.3;
-  transform: translateY(0.12em);
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-.mono-latin { position: relative; direction: ltr; unicode-bidi: isolate; }
-.mono-latin span { color: var(--pink); margin: 0 0.1em; }
-.monogram:hover .mono-ar { opacity: 0.55; }
+.monogram span { color: var(--pink); margin: 0 0.1em; }
 
 .site-nav {
   display: flex;
