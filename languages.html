@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Languages · Aila Al Mulki</title>
+  <meta name="description" content="Personal blog of Aila Al Mulki — researcher and developer at VirusTotal, working on malware and AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261024a">
+</head>
+<body data-title-key="titleLanguages">
+  <header class="site-header">
+    <a class="monogram" href="./" aria-label="Aila Al Mulki — home">A<span>·</span>M</a>
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="writing.html" data-i18n="navWriting">Writing</a>
+      <a href="languages.html" data-i18n="navLanguages" aria-current="page">Languages</a>
+      <a href="about.html" data-i18n="navAbout">About me</a>
+    </nav>
+
+    <nav class="lang-switch" aria-label="Language">
+      <button type="button" data-lang="en" lang="en">EN</button>
+      <button type="button" data-lang="es" lang="es">ES</button>
+      <button type="button" data-lang="ar" lang="ar" class="ar">عربي</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="writing page-top" aria-labelledby="writing-title">
+      <h1 class="page-title" id="writing-title" data-i18n="languagesTitle">Languages</h1>
+      <ul class="post-list" data-posts="all" data-section="languages"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="flower" aria-hidden="true">✿</span>
+    <p dir="ltr">© <span id="year"></span> Aila Al Mulki</p>
+  </footer>
+
+  <script src="i18n.js?v=20261024a"></script>
+  <script src="posts.js?v=20261024a"></script>
+  <script src="main.js?v=20261024a"></script>
+</body>
+</html>

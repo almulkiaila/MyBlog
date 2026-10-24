@@ -250,6 +250,19 @@ h2 .rule {
   stroke-linecap: round;
 }
 
+.post-icon {
+  display: block;
+  width: 4rem;
+  height: auto;
+  margin-bottom: 1.75rem;
+  fill: none;
+  stroke: var(--pink);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+.prose em { color: var(--pink-deep); }
+
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -292,6 +305,8 @@ html[lang="ar"] .back {
   font-size: 0.95rem;
 }
 html[lang="ar"] .post-title { font-family: var(--arabic); font-size: 1.45rem; line-height: 1.6; }
+
+html[lang="ar"] .prose em { font-style: normal; }
 
 /* ---------- Gentle fade when switching language ---------- */
 

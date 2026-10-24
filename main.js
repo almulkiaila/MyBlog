@@ -36,8 +36,10 @@
     document.title = t[body.dataset.titleKey] || t.title;
 
     document.querySelectorAll("[data-posts]").forEach(function (list) {
-      var limit = list.dataset.posts === "all" ? POSTS.length : Number(list.dataset.posts);
-      list.innerHTML = POSTS.slice(0, limit).map(function (p) {
+      var limit = list.dataset.posts === "all" ? Infinity : Number(list.dataset.posts);
+      var section = list.dataset.section || "writing";
+      var posts = POSTS.filter(function (p) { return p.section === section; });
+      list.innerHTML = posts.slice(0, limit).map(function (p) {
         var x = p[lang];
         return '<li><a href="posts/' + p.slug + '.html">' +
           '<time datetime="' + p.date + '">' + x.date + '</time>' +

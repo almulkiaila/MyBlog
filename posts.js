@@ -1,8 +1,30 @@
-// All posts, newest first. The homepage shows the first two; writing.html shows them all.
+// All posts, newest first. "section" is "writing" or "languages".
+// The homepage shows the latest two writings; writing.html and languages.html list their section.
 // To add a post: create posts/<slug>.html + posts/<slug>.js, then add an entry at the top here.
 window.POSTS = [
   {
+    slug: "how-i-learned-languages-on-my-own",
+    section: "languages",
+    date: "2026-10-24",
+    en: {
+      date: "October 24, 2026",
+      title: "How I Learned Languages on My Own",
+      excerpt: "It isn't a talent I was born with. The tip I give most often: live the language."
+    },
+    es: {
+      date: "24 de octubre de 2026",
+      title: "Cómo aprendí idiomas por mi cuenta",
+      excerpt: "No es un talento de nacimiento. El consejo que más doy: vive el idioma."
+    },
+    ar: {
+      date: "٢٤ تشرين الأول ٢٠٢٦",
+      title: "كيف تعلّمت اللغات لحالي",
+      excerpt: "مو موهبة خلقت فيها. النصيحة يلي دايماً بعطيها: عيش اللغة."
+    }
+  },
+  {
     slug: "the-same-sound",
+    section: "writing",
     date: "2022-11-09",
     en: {
       date: "November 9, 2022",
